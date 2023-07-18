@@ -1,47 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css"/>
-  <title>Document</title>
-</head>
-<body>.
-  <!-- hero -->
-  <!-- 
-    -crear <section> como contenedor de hero
-    -<header> es contenedor de logo, nav y social
-    -<main> h1 como contenedor de title and video  y el button
-   -->
-   <!-- our services -->
-   <!-- 
-    -contenedor <section>
-    -<figure> para la imagen
-    -<aside> h3 para alinear hacia la derecha el contenido del escrito
-    -<button> "get started"
-    -4 boxes estructura flexbox en posicion horizontal
-    -->
-    <!-- feature content -->
-    <!-- 
-      -h4 "frase"
-      -h5 "title"
-      -3 boxes con estrcutura flexbox "imagen and <p>"
-      -ancla "view more"
-     -->
-     <!-- promotional contact -->
-     <!-- 
-      -h5 "subtitle"
-      -<button> "contact us"
-      -->
-      <!-- footer -->
-      <!-- 
-      -3 boxes de flexbox
-      -1 caja signup
-      -2 caja <nav>
-      -3 caja <nav>
-      -<address> "correo electronico"
-      -<button> con ancla para "suscribirse" 
-      -flexbox redes sociales
-       -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Courier+Prime"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Bizboot</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="/" class="logo">BizBoost</a>
+        <nav>
+          <ul class="nav">
+            <li><a href="#" class="selection">Home</a></li>
+            <li>
+              <a href="#">
+                Templates
+                <img src="img/flechita.svg" alt="flechita" />
+              </a>
+              <ul class="sub-nav">
+                <li>
+                  <a href="#">Right Sidebar</a>
+                </li>
+                <li>
+                  <a href="#">No Sidebar</a>
+                </li>
+                <li>
+                  <a href="#">Style Guide</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="social">
+          <li>
+            <a
+              href="https://facebook.com/codigoingenierooficial"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="./img/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/CodigoIngenier"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="./img/twitter.svg" alt="twitter" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.ln.com/codigoingenierooficial/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="./img/likent.svg" alt="likent" />
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section>
+          <h1>We <span class="opacity">build</span> digital experiences.</h1>
+          <p>
+            We collaborate with smart and creative people to build awesome
+            WordPress Full Site Editing Themes.
+          </p>
+          <button class="button-gradient">Get Started</button>
+          </figure>
+        </section>
+        <figure>
+          <video
+            width="100%"
+            controls
+            loop
+            src="https://fse.catchthemes.com/bizboost-free/wp-content/themes/bizboost/assets/video/video-featured.mp4"
+          ></video>
+      </main>
+    </section>
   </body>
 </html>
