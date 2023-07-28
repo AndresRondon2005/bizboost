@@ -118,6 +118,19 @@ h1 {
   font-size: 2.1em;
   line-height: 1.72em;
 }
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.29em;
+  text-transform: capitalize;
+  margin-top: 14px;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: var(--bold);
+}
+
 h4,
 h5 {
   font-weight: var(--bold);
@@ -125,6 +138,8 @@ h5 {
 
 h6 {
   font-weight: var(--semi-bold);
+  font-size: 16px;
+  color: var(--body-text);
 }
 
 ul {
@@ -142,6 +157,10 @@ figure {
   padding: 0;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   color: var(--body-text);
   text-decoration: none;
@@ -151,6 +170,27 @@ a {
   line-height: 2.4em;
   text-transform: capitalize;
 }
+
+hr {
+  position: absolute;
+  text-align: start;
+}
+
+.boxes a:hover {
+  color: var(--primary);
+}
+
+.boxes h2 {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34.32px;
+}
+
+/*.boxes {
+  border: 2px solid var(--body-text);
+}*/
 
 a:hover,
 .logo h2:hover {
@@ -198,18 +238,21 @@ header {
   flex: 3;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
 .mobile {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
+.mobile img {
+  width: 16px;
+}
+
 .desktop {
+  display: none;
+}
+
+.submenu {
   display: none;
 }
 
@@ -250,6 +293,53 @@ main > * {
   max-height: 600px;
   object-fit: cover;
 }
+
+.our-services {
+  margin: 42px 0;
+}
+
+.big-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.number-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-box > * {
+  display: flex;
+  justify-content: center;
+}
+
+/*=========================
+  Feature Container
+==========================*/
+
+.feature-container-layout {
+  border: 1 solid var(--body-text);
+}
+
+.feature-container-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.boxes a:hover {
+  color: var(--primary);
+}
+
+/*.boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 44px;
+  align-items: flex-start;
+}*/
 
 /*=======================================
     TABLET & DESKTOP BREAKPOINTS
@@ -299,15 +389,19 @@ main > * {
   .desktop {
     flex: 3;
     display: flex;
-    column-gap: 35px;
     justify-content: center;
-  }
-  .desktop > ul li {
-    position: relative;
   }
 
   .desktop ul {
     column-gap: 35px;
+  }
+
+  .desktop ul li:nth-child(2) img {
+    width: 16px;
+  }
+
+  .desktop ul li {
+    position: relative;
   }
 
   .desktop ul li:nth-child(2):hover .submenu {
@@ -332,10 +426,6 @@ main > * {
     padding-left: 30px;
   }
 
-  .submenu {
-    display: none;
-  }
-
   .social {
     flex: 1;
   }
@@ -345,55 +435,52 @@ main > * {
     line-height: 1.72em;
   }
 
+  h3 {
+    font-size: 2.27em;
+  }
+
   main {
     max-width: 760px;
     /* padding: 70px 320px; */
   }
-}
-.our-services {
-  padding: 131px 0;
-}
-.our-services .container {
-  display: flex;
-  gap: 1.5em;
-  align-items: center;
-}
-.our-services .container > * {
-  flex: 1;
-}
-.our-services .container img {
-  width: 100%;
-}
-.our-services aside {
-  padding: 0 100px;
-}
-.our-services aside h6 {
-  font-size: 0.8em;
-  font-weight: var(--semi-bold);
-  line-height: 1.44em;
-  color: var(--body-text);
-  text-transform: uppercase;
-}
-.our-services aside h2 {
-  color: var(--white);
-  text-transform: capitalize;
-  margin-top: 14px;
-}
-.our-services aside p {
-  margin: 20px 0;
-}
-.big-numbers {
-  margin-top: 131px;
-}
-.big-numbers .container {
-  display: flex;
-  justify-content: center;
-}
-.big-numbers .number-box {
-  border-color: green;
-  flex: 1;
-  text-align: center;
-}
-.number-box h2 {
-  font-weight: var(--bold);
+
+  .our-services {
+    display: flex;
+    margin: 131px 0;
+  }
+
+  .big-numbers {
+    flex-direction: row;
+    gap: 40px;
+    padding: 0 80px;
+    margin-bottom: 131px;
+  }
+
+  .big-numbers > * {
+    flex: 1;
+  }
+
+  .our-services > * {
+    flex: 1;
+  }
+  .our-services-layout {
+    padding: 0 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    /*=======================================
+        Feature Container
+    =========================================*/
+
+    .feature-container-layout {
+      flex-direction: row;
+      gap: 44px;
+    }
+
+    .feature-container-layout > * {
+      flex: 1;
+    }
+  }
 }
