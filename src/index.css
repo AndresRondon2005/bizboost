@@ -188,10 +188,6 @@ hr {
   line-height: 34.32px;
 }
 
-/*.boxes {
-  border: 2px solid var(--body-text);
-}*/
-
 a:hover,
 .logo h2:hover {
   color: var(--primary);
@@ -333,14 +329,6 @@ main > * {
   color: var(--primary);
 }
 
-/*.boxes {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  padding: 44px;
-  align-items: flex-start;
-}*/
-
 /*=======================================
     TABLET & DESKTOP BREAKPOINTS
 =========================================*/
@@ -469,18 +457,17 @@ main > * {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    /*=======================================
+  }
+  /*=======================================
         Feature Container
     =========================================*/
 
-    .feature-container-layout {
-      flex-direction: row;
-      gap: 44px;
-    }
+  .feature-container-layout {
+    flex-direction: row;
+    gap: 44px;
+  }
 
-    .feature-container-layout > * {
-      flex: 1;
-    }
-  }
+  .feature-container-layout > * {
+    flex: 1;
+  }
 }
